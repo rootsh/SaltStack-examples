@@ -1,1 +1,1 @@
-# Examples of SaltStack running Windows(R)
+# Examples of SaltStack running in Windows(R)
