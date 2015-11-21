@@ -1,7 +1,7 @@
 disable:
     selinux.mode
 
-{% elif grains['osrelease'].startswith('6') %}
+{% if grains['osrelease'].startswith('6') %}
 iptables:
   service.dead:
     - disabled: True
@@ -11,7 +11,7 @@ ip6tables:
     - disabled: True
 {% endif %}
 
-{% elif grains['osrelease'].startswith('7') %}
+{% if grains['osrelease'].startswith('7') %}
 firewalld:
   service.dead:
     - disabled: True
