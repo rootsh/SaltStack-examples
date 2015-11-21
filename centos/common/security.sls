@@ -1,9 +1,10 @@
-/etc/sysconfig/selinux:
-  file.sed:
-    - before: 'enforcing'
-    - after: 'disabled'
-    - limit: '^SELINUX='
+# Disable SELINUX
+/etc/selinux/config:
+  file.managed:
+    - source: salt://common/files/selinux.conf
 
+
+#Disable firewall
 {% if grains['osrelease'].startswith('6') %}
 iptables:
   service.dead:
@@ -14,6 +15,7 @@ ip6tables:
     - disabled: True
 {% endif %}
 
+# Disable firewalld
 {% if grains['osrelease'].startswith('7') %}
 firewalld:
   service.dead:
