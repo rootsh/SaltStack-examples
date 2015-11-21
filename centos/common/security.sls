@@ -1,5 +1,8 @@
-disable:
-    selinux.mode
+/etc/sysconfig/selinux:
+  file.sed:
+    - before: 'enforcing'
+    - after: 'disabled'
+    - limit: '^SELINUX='
 
 {% if grains['osrelease'].startswith('6') %}
 iptables:
