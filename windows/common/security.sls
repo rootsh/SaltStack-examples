@@ -1,2 +1,3 @@
-firewall_windows:
-  firewall.disable:
+# Disable firewall
+win_firewall:
+  - disable: True
