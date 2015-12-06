@@ -1,5 +1,22 @@
 # SaltStack-examples
 
+
+*Configuration saltstack master*
+```bash
+vim /etc/salt/master
+file_roots:
+  centos:
+    - /srv/SaltStack-examples/centos
+  windows:
+    - /srv/SaltStack-examples/windows
+```
+
+*Create directory for SaltStack examples*
+```bash
+cd /srv
+git clone https://github.com/rootsh/SaltStack-examples.git
+```
+
 *List keys using salt-key*
 ```bash
 [root@saltstack srv]# salt-key -L
