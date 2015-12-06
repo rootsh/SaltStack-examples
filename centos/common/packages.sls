@@ -8,3 +8,4 @@ common.packages:
       - wget
       - bzip2
       - htop
+      - net-tools
