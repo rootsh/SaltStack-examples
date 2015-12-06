@@ -24,6 +24,6 @@ firewalld:
 forcediasble:
   cmd.run:
     - name: systemctl disable firewalld
-    - unless: systemctl status firewalld | grep Loaded | grep enabled
+    - onlyif: systemctl status firewalld | grep Loaded | grep enabled
 
 {% endif %}
