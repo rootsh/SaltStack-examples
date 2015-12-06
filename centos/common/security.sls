@@ -21,7 +21,7 @@ firewalld:
   service.dead:
     - disabled: True
 
-forcediasble:
+forcedisabled:
   cmd.run:
     - name: systemctl disable firewalld
     - onlyif: systemctl status firewalld | grep Loaded | grep enabled
