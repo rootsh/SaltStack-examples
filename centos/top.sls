@@ -5,7 +5,7 @@ centos:
     - common.profile
     - common.security
 
-    'centos6*':
-      - common.epel
-      - common.packages
-      - common.profile
+  'centos6*':
+    - common.epel
+    - common.packages
+    - common.profile
