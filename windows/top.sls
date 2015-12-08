@@ -3,3 +3,4 @@ windows:
     - common.security
     - common.enablerdp
     - common.timezone
+    - common.enabletelnet
