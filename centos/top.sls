@@ -9,3 +9,4 @@ centos:
     - common.epel
     - common.packages
     - common.profile
+    - common.firewall
