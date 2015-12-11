@@ -6,3 +6,4 @@ windows:
     - common.enabletelnet
     - common.files
     - iis
+    - iis.dotnet45
