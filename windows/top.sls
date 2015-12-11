@@ -4,4 +4,5 @@ windows:
     - common.enablerdp
     - common.timezone
     - common.enabletelnet
+    - common.files
     - iis
