@@ -1,4 +1,3 @@
-#https://github.com/saltstack/salt-winrepo/blob/master/dotnet.sls
 .NET:
   '4.5.51209':
     full_name: 'Microsoft .NET Framework 4.5.2'
